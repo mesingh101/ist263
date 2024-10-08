@@ -1,20 +1,8 @@
 
-/* Set repeating background image */
-body {
-    background-image: url('SYRACUSE_BlockS_ORANGE_CMYK.jpg'); /* Ensure this path is correct */
-    background-repeat: repeat;
-  }
   
   /* Style for paragraph */
   p {
-    background-color: mediumseagreen; /* Set your preferred background color */
-    color: tomato; /* Text color */
-    border: 2px solid dodgerblue; /* Set non-black border */
-    padding: 10px;
-    width: fit-content;
-    margin: 20px auto; /* Center the paragraph on the page */
-    font-size: 20px;
-    text-align: center;
+    background-color: mediumseagreen; 
   }
   
   
