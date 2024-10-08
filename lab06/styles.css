@@ -1,7 +1,7 @@
 
 /* Set repeating background image */
 body {
-    background-image: url('/Users/dayna/Desktop/ist263/activity6/SYRACUSE_BlockS_ORANGE_CMYK.jpg'); /* Ensure this path is correct */
+    background-image: url('SYRACUSE_BlockS_ORANGE_CMYK.jpg'); /* Ensure this path is correct */
     background-repeat: repeat;
     background-size: cover;
   }
