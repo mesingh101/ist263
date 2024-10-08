@@ -1,6 +1,19 @@
-
 body {
-    background-color: lightcoral; 
-  }
-  
+  background-image: url('SYRACUSE_BlockS_ORANGE_CMYK.jpg'); /* Ensure this path is correct */
+  background-repeat: repeat; /* Image will repeat if smaller than the viewport */
+  background-size: cover; /* Image will cover the entire body, might override the repeat */
+}
+
+/* Style for paragraph */
+p {
+  background-color: #BA966E; /* Set your preferred background color */
+  color: #c8562c; /* Text color */
+  border: 2px solid #33daff; /* Set non-black border */
+  padding: 10px;
+  width: fit-content; /* Width based on content */
+  margin: 20px auto; /* Center the paragraph on the page */
+  font-size: 20px; /* Font size */
+  text-align: center; /* Center the text within the paragraph */
+}
+
   
