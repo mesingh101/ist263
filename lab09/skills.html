@@ -113,7 +113,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- This should be the first line in <head> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
     <style>
@@ -129,7 +129,7 @@
             align-items: flex-start;
             padding: 20px;
         }
-        
+
         /* Styling for skills icons container (flexbox1) */
         .skills-row {
             display: flex;
@@ -138,10 +138,12 @@
             margin-top: 20px;
             flex: 3; /* Takes up 3/4 of the width */
         }
+
         .skill {
             text-align: center;
             margin: 10px;
         }
+
         .skill img {
             width: 50px;
             display: block;
@@ -166,8 +168,7 @@
 <body>
 
     <h1>Technical Skills</h1>
-    <p>My career has been focused on web development, and i've consistently learned new frameworks and languages as web technologies have evolved. Below are my core skills.</p>
-
+    <p>My career has been focused on web development, and I've consistently learned new frameworks and languages as web technologies have evolved. Below are my core skills.</p>
 
     <div class="flexbox2">
         <div class="skills-row">
@@ -192,16 +193,12 @@
                 <p>R</p>
             </div>
         </div>
-    </div>
-    
 
-
-    <aside>
-        <h2>Other Skills</h2>
-        <p>Windows 10<br>Photoshop<br>Excel<br>SQL<br>Illustrator</p>
-    </aside>
-</div>
+        <aside>
+            <h2>Other Skills</h2>
+            <p>Windows 10<br>Photoshop<br>Excel<br>SQL<br>Illustrator</p>
+        </aside>
+    </div> <!-- Closing flexbox2 -->
 
 </body>
 </html>
-
