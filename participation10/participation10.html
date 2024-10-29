@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Text</title>
     <style> 
-        /* Default text */
-        .large-text {
+        /* Default style for large screens */
+        .text-large {
             font-size: 2em;
         }
-        
-        /* Hide .large-text and show .small-text on smaller screens */
+
+        /* Hide .text-large and show .text-small on smaller screens */
         @media (max-width: 800px) {
-            .large-text {
+            .text-large {
                 display: none;
             }
-            .small-text {
+            .text-small {
                 display: block;
                 font-size: 2em;
             }
         }
 
-        /* Initially hide the .small-text div */
-        .small-text {
+        /* Initially hide the .text-small div */
+        .text-small {
             display: none;
         }
     </style>
 </head>
 <body>
-    <div class="large-text">
+    <div class="text-large">
         I'm large
     </div>
-    <div class="small-text">
+    <div class="text-small">
         I'm small
     </div>
 </body>
