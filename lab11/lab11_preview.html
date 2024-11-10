@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shell Game</title>
+    <!-- Link to the updated CSS file animate2.css -->
+    <link rel="stylesheet" href="animate2.css">
+    <style>
+        /* Flexbox styling for container */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Set initial order for each shell */
+        #first {
+            order: 1;
+        }
+        #second {
+            order: 2;
+        }
+        #third {
+            order: 3;
+        }
+    </style>
+</head>
+<body onload="ShuffleShells();">
+
+    <h2>Pick a Shell</h2>
+    <!-- Flex container around images -->
+    <div class="container">
+        <!-- Winning shell -->
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="first walnut" id="first" onclick="code();" style="width:100px; height:100px;">
+        
+        <!-- Losing shells -->
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="second walnut" id="second" onclick="TryAgain();" style="width:100px; height:100px;">
+        <img src="https://laferger.github.io/ist263/images/walnut.png" alt="third walnut" id="third" onclick="TryAgain();" style="width:100px; height:100px;">
+    </div>
+
+    <!-- Empty div to display messages -->
+    <div id="message" style="font-size: 1.5em; margin-top: 20px; color: #333;"></div>
+
+    <script>
+        // Winning function that updates the message in the <div>
+        function code() {
+            document.getElementById("message").innerHTML = "You Won!";
+        }
+
+        // Losing function that updates the message in the <div>
+        function TryAgain() {
+            document.getElementById("message").innerHTML = "Wrong Shell - Try Again";
+        }
+
+        // Function to shuffle the winning shell's position
+        function ShuffleShells() {
+            // Generate a random number (2, 3, or 4) for the 'order' of the winning shell
+            document.getElementById("first").style.order = Math.floor((Math.random() * 3) + 2);
+        }
+    </script>
+
+</body>
+</html>
