@@ -3,17 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Alert Example</title>
+    <title>Shell Game</title>
 </head>
 <body>
 
-    <a href="#" onclick="SecondBlock()">Click for a message</a>
-    
+    <h2>Pick a Shell</h2>
+    <!-- Shells represented as images -->
+    <div>
+        <!-- Winning shell -->
+        <img src="shell1.png" alt="Shell 1" onclick="code();" style="width:100px; height:100px;">
+        
+        <!-- Losing shells -->
+        <img src="shell2.png" alt="Shell 2" onclick="TryAgain();" style="width:100px; height:100px;">
+        <img src="shell3.png" alt="Shell 3" onclick="TryAgain();" style="width:100px; height:100px;">
+    </div>
+
     <script>
-        function SecondBlock() {
-            alert("My first JavaScript program!");
+        // Winning function
+        function code() {
+            alert("You Won!");
+        }
+
+        // Losing function
+        function TryAgain() {
+            alert("Wrong Shell - Try Again");
         }
     </script>
 
 </body>
 </html>
+
+
