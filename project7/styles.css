@@ -140,3 +140,50 @@ a.button:hover {
         padding: 15px;
     }
 }
+
+/* Intro Section Layout */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and images */
+    gap: 20px; /* Add space between columns */
+    text-align: left; /* Align text on the left */
+}
+
+.intro .text {
+    flex: 1; /* Text takes up equal space */
+}
+
+.intro .text h2 {
+    font-size: 2em; /* Emphasize heading size */
+}
+
+.intro .text p {
+    font-size: 1.2em; /* Slightly larger text for readability */
+    line-height: 1.6; /* Enhance text spacing */
+}
+
+.intro .images {
+    flex: 1; /* Images take up equal space */
+    text-align: center; /* Center images */
+}
+
+.intro .images img {
+    width: 100%; /* Images span the width of their container */
+    max-width: 400px; /* Limit maximum size for consistency */
+    border-radius: 15px; /* Keep rounded corners */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
+    margin-bottom: 20px; /* Space between images */
+}
+
+/* Responsive Adjustments for Intro Section */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack text and images on smaller screens */
+        text-align: center; /* Center align for smaller devices */
+    }
+
+    .intro .images img {
+        max-width: 80%; /* Adjust image size for small screens */
+    }
+}
