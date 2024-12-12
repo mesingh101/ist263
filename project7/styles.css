@@ -1,23 +1,26 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', Arial, sans-serif; /* Add a modern and clean font */
+    line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #222;
+    background-color: #fefefe; /* Light background for a clean look */
+    color: #444;
 }
 
 /* Header Styles */
 header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
+    background: linear-gradient(90deg, #4e54c8, #8f94fb); /* Soft gradient for elegance */
+    color: white;
+    padding: 1.5em 0;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 /* Navigation Menu */
@@ -27,44 +30,97 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background: #444;
+    background: #6c63ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: white;
+    color: #6c63ff;
+    border-radius: 5px;
 }
 
 /* Main Content */
 main {
+    margin: 20px auto;
+    max-width: 900px;
     padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add depth to main container */
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    color: #6c63ff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0; /* Decorative line under headings */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+img {
+    width: 150px; /* Small square size */
+    height: 150px;
+    object-fit: cover; /* Ensures the image fits nicely */
+    border: 2px solid #e0e0e0;
+    border-radius: 10px; /* Rounded corners for a softer look */
+    margin: 15px auto;
+    display: block; /* Centers the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished appearance */
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
+    padding: 20px 0;
+    background: linear-gradient(90deg, #8f94fb, #4e54c8);
     color: white;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 0.9em;
+    letter-spacing: 1px;
 }
 
-/* Section Styles */
-section {
-    margin-bottom: 20px;
+/* Buttons */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #6c63ff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-section h2 {
-    color: #444;
+a.button:hover {
+    background-color: #4e54c8;
+    transform: scale(1.05);
 }
 
 /* Responsive Design */
@@ -72,9 +128,15 @@ section h2 {
     nav ul {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
     }
 }
