@@ -239,3 +239,32 @@ a.button:hover {
 a.button:active {
     transform: scale(0.98); /* Slight press-down effect */
 }
+.collapsible {
+    background-color: #f1f1f1;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.collapsible.active {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 15px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+}

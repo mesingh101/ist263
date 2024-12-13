@@ -32,45 +32,58 @@
     <main>
         <section>
             <h2>5-Day Itinerary</h2>
-            <img src="jamaica.jpg" alt="Travel Image">
-            <p>Jamaica is known for its vibrant culture, reggae music, and beautiful landscapes. Here’s a 5-day itinerary for your Jamaican getaway:</p>
-            <ul>
-                <li>
-                    <strong>Day 1:</strong> Relax at Seven Mile Beach, Negril, cliff diving at Rick’s Café, dinner with live reggae music.
+            <div class="collapsible-section">
+                <button class="collapsible">Day 1: Relax at Seven Mile Beach</button>
+                <div class="content">
+                    <p>Relax at Seven Mile Beach, Negril, cliff diving at Rick’s Café, dinner with live reggae music.</p>
                     <div class="images">
                         <img src="ricks.jpg" alt="Rick's Café">
                         <img src="jamaicaboat.jpg" alt="Seven Mile Beach in Negril">
                     </div>
-                </li>
-                <li>
-                    <strong>Day 2:</strong> Visit Dunn’s River Falls, rafting on the Martha Brae, explore local markets for crafts.
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="collapsible">Day 2: Visit Dunn’s River Falls</button>
+                <div class="content">
+                    <p>Visit Dunn’s River Falls, rafting on the Martha Brae, explore local markets for crafts.</p>
                     <div class="images">
                         <img src="dunsriver.jpg" alt="Dunn’s River Falls">
                         <img src="dunsriver2.jpg" alt="Rafting on the Martha Brae">
                     </div>
-                </li>
-                <li>
-                    <strong>Day 3:</strong> Day trip water horseback riding, hiking, and enjoy woodside jerk chicken.
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="collapsible">Day 3: Water Horseback Riding</button>
+                <div class="content">
+                    <p>Day trip water horseback riding, hiking, and enjoy woodside jerk chicken.</p>
                     <div class="images">
                         <img src="arubahorse.jpg" alt="Water Horseback Riding">
                         <img src="jamaicajerk.jpg" alt="Woodside Jerk Chicken">
                     </div>
-                </li>
-                <li>
-                    <strong>Day 4:</strong> Tour Bob Marley Museum, Devon House for dessert, evening at Port Royal for seafood.
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="collapsible">Day 4: Bob Marley Museum</button>
+                <div class="content">
+                    <p>Tour Bob Marley Museum, Devon House for dessert, evening at Port Royal for seafood.</p>
                     <div class="images">
                         <img src="marleyhouse.jpg" alt="Bob Marley Museum">
                         <img src="marleyhouse2.jpg" alt="Devon House">
                         <img src="marleyhouse3.jpg" alt="Port Royal">
                     </div>
-                </li>
-                <li>
-                    <strong>Day 5:</strong> Snorkeling at Montego Bay Marine Park and relax at Doctor's Cave Beach.
+                </div>
+            </div>
+            <div class="collapsible-section">
+                <button class="collapsible">Day 5: Snorkeling at Montego Bay</button>
+                <div class="content">
+                    <p>Snorkeling at Montego Bay Marine Park and relax at Doctor's Cave Beach.</p>
                     <div class="images">
                         <img src="onelove.jpg" alt="Montego Bay Marine Park">
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+        </section>
+        
         </section>
 
         <section>
@@ -87,5 +100,20 @@
     <footer>
         <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll(".collapsible").forEach(button => {
+            button.addEventListener("click", () => {
+                button.classList.toggle("active");
+                const content = button.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+    </script>
 </body>
+
+
 </html>
