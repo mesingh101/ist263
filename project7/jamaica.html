@@ -9,13 +9,13 @@
 </head>
 <body>
     <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="">
-            <p id="modalCaption"></p>
-        </div>
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <p id="modalCaption"></p>
     </div>
-    
+</div>
+
     <header>
         <h1>Explore Jamaica</h1>
         <nav>
@@ -35,33 +35,22 @@
             <img src="jamaica.jpg" alt="Travel Image" />
             <p>Jamaica is known for its vibrant culture, reggae music, and beautiful landscapes. Here’s a 5-day itinerary for your Jamaican getaway:</p>
             <ul>
-                <li>
-                    <strong>Day 1:</strong> Relax at Seven Mile Beach, Negril, cliff diving at Rick’s Café, dinner with live reggae music.
-                    <img src="ricks.jpg" alt="Relax at Seven Mile Beach in Negril." data-caption="Relax at Seven Mile Beach in Negril." />
-                    <img src="jamaicaboat.jpg" alt="Relax at Seven Mile Beach in Negril." data-caption="Relax at Seven Mile Beach in Negril." />
-                </li>
-                <li>
-                    <strong>Day 2:</strong> Visit Dunn’s River Falls, rafting on the Martha Brae, explore local markets for crafts.
-                    <img src="dunsriver.jpg" alt="Dunn's River Falls" data-caption="Dunn's River Falls" />
-                    <img src="dunsriver2.jpg" alt="Dunn's River Falls" data-caption="Dunn's River Falls" />
-                </li>
-                <li>
-                    <strong>Day 3:</strong> Day trip water horseback riding, hiking, and enjoy woodside jerk chicken.
-                    <img src="arubahorse.jpg" alt="Water Horseback Riding" data-caption="Water Horseback Riding" />
-                    <img src="jamaicajerk.jpg" alt="Woodside Jerk Chicken" data-caption="Woodside Jerk Chicken" />
-                </li>
-                <li>
-                    <strong>Day 4:</strong> Tour Bob Marley Museum, Devon House for dessert, evening at Port Royal for seafood.
-                    <img src="marleyhouse.jpg" alt="Bob Marley Museum" data-caption="Bob Marley Museum" />
-                    <img src="marleyhouse2.jpg" alt="Bob Marley Museum" data-caption="Bob Marley Museum" />
-                    <img src="marleyhouse3.jpg" alt="Bob Marley Museum" data-caption="Bob Marley Museum" />
-                </li>
-                <li>
-                    <strong>Day 5:</strong> Snorkeling at Montego Bay Marine Park and relax at Doctor's Cave Beach.
-                    <img src="onelove.jpg" alt="Montego Bay Marine Park" data-caption="Montego Bay Marine Park" />
-                </li>
+                <li><strong>Day 1:</strong> Relax at Seven Mile Beach, Negril, cliff diving at Rick’s Café, dinner with live reggae music.</li>
+                <img src="ricks.jpg" alt="Travel Image" />
+                <img src="jamaicaboat.jpg" alt="Travel Image" />
+                <li><strong>Day 2:</strong> Visit Dunn’s River Falls, rafting on the Martha Brae, explore local markets for crafts.</li>
+                <img src="dunsriver.jpg" alt="Travel Image" />
+                <img src="dunsriver2.jpg" alt="Travel Image" />
+                <li><strong>Day 3:</strong> Day trip water horseback riding, hiking, and enjoy woodside jerk chicken.</li>
+                <img src="arubahorse.jpg" alt="Travel Image" />
+                <img src="jamaicajerk.jpg" alt="Travel Image" />
+                <li><strong>Day 4:</strong> Tour Bob Marley Museum, Devon House for dessert, evening at Port Royal for seafood.</li>
+                <img src="marleyhouse.jpg" alt="Travel Image" />
+                <img src="marleyhouse2.jpg" alt="Travel Image" />
+                <img src="marleyhouse3.jpg" alt="Travel Image" />
+                <li><strong>Day 5:</strong> Snorkeling at Montego Bay Marine Park and relax at Doctor's Cave Beach.</li>
+                <img src="onelove.jpg" alt="Travel Image" />
             </ul>
-            
         </section>
 
         <section>
@@ -78,34 +67,6 @@
     <footer>
         <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
     </footer>
-    
-    <script>
-        const modal = document.getElementById('imageModal');
-        const modalImage = document.getElementById('modalImage');
-        const modalCaption = document.getElementById('modalCaption');
-        const closeBtn = document.querySelector('.close');
-    
-        // Function to open modal with clicked image and caption
-        document.querySelectorAll('img[data-caption]').forEach(img => {
-            img.addEventListener('click', () => {
-                modal.style.display = 'block';
-                modalImage.src = img.src;
-                modalCaption.textContent = img.getAttribute('data-caption');
-            });
-        });
-    
-        // Close modal when the close button is clicked
-        closeBtn.addEventListener('click', () => {
-            modal.style.display = 'none';
-        });
-    
-        // Close modal when clicking outside the modal content
-        window.addEventListener('click', event => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-            }
-        });
-    </script>
-    
+    </div>  
 </body>
 </html>
