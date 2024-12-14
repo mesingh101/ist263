@@ -232,7 +232,7 @@ a.button:active {
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #ff99cc;
+    background-color: #993399;
     font-family: 'Poppins', Arial, sans-serif;
     display: flex;
     align-items: center;
