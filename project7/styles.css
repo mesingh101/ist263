@@ -302,4 +302,20 @@ a.button:active {
     display: block;
   }
   
-  
+  .skip-to-content {
+    position: absolute;
+    top: -40px; /* Initially hide the button off-screen */
+    left: 0;
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 5px;
+    transition: top 0.3s ease;
+}
+
+.skip-to-content:focus {
+    top: 10px; /* Button comes into view when focused */
+}
