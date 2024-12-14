@@ -391,3 +391,9 @@ button:hover {
 a {
     text-decoration: none;
 }
+
+a img:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    border-color: #4CAF50;   /* Green border color */
+    cursor: pointer;        /* Change cursor to indicate it's clickable */
+}
