@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img id="modalImage" src="" alt="">
-            <p id="modalCaption"></p>
-        </div>
-    </div>
-
     <header>
         <h1>Explore Jamaica</h1>
         <nav>
@@ -32,58 +24,24 @@
     <main>
         <section>
             <h2>5-Day Itinerary</h2>
-            <div class="collapsible-section">
-                <button class="collapsible">Day 1: Relax at Seven Mile Beach</button>
-                <div class="content">
-                    <p>Relax at Seven Mile Beach, Negril, cliff diving at Rick’s Café, dinner with live reggae music.</p>
-                    <div class="images">
-                        <img src="ricks.jpg" alt="Rick's Café">
-                        <img src="jamaicaboat.jpg" alt="Seven Mile Beach in Negril">
-                    </div>
-                </div>
-            </div>
-            <div class="collapsible-section">
-                <button class="collapsible">Day 2: Visit Dunn’s River Falls</button>
-                <div class="content">
-                    <p>Visit Dunn’s River Falls, rafting on the Martha Brae, explore local markets for crafts.</p>
-                    <div class="images">
-                        <img src="dunsriver.jpg" alt="Dunn’s River Falls">
-                        <img src="dunsriver2.jpg" alt="Rafting on the Martha Brae">
-                    </div>
-                </div>
-            </div>
-            <div class="collapsible-section">
-                <button class="collapsible">Day 3: Water Horseback Riding</button>
-                <div class="content">
-                    <p>Day trip water horseback riding, hiking, and enjoy woodside jerk chicken.</p>
-                    <div class="images">
-                        <img src="arubahorse.jpg" alt="Water Horseback Riding">
-                        <img src="jamaicajerk.jpg" alt="Woodside Jerk Chicken">
-                    </div>
-                </div>
-            </div>
-            <div class="collapsible-section">
-                <button class="collapsible">Day 4: Bob Marley Museum</button>
-                <div class="content">
-                    <p>Tour Bob Marley Museum, Devon House for dessert, evening at Port Royal for seafood.</p>
-                    <div class="images">
-                        <img src="marleyhouse.jpg" alt="Bob Marley Museum">
-                        <img src="marleyhouse2.jpg" alt="Devon House">
-                        <img src="marleyhouse3.jpg" alt="Port Royal">
-                    </div>
-                </div>
-            </div>
-            <div class="collapsible-section">
-                <button class="collapsible">Day 5: Snorkeling at Montego Bay</button>
-                <div class="content">
-                    <p>Snorkeling at Montego Bay Marine Park and relax at Doctor's Cave Beach.</p>
-                    <div class="images">
-                        <img src="onelove.jpg" alt="Montego Bay Marine Park">
-                    </div>
-                </div>
-            </div>
-        </section>
-        
+            <img src="jamaicabeach.jpg" alt="Jamaica Scenic View" />
+            <p>Jamaica is a vibrant destination with stunning beaches, rich history, and a lively culture. Here's a 5-day itinerary to immerse yourself in the heart of Jamaica:</p>
+            <ul>
+                <li><strong>Day 1:</strong> Relax at Seven Mile Beach, Negril. Enjoy cliff diving at Rick’s Café and a reggae-filled dinner.</li>
+                <img src="ricks.jpg" alt="Rick's Café" />
+                <img src="jamaicaboat.jpg" alt="Seven Mile Beach in Negril" />
+                <li><strong>Day 2:</strong> Visit Dunn’s River Falls, go rafting on the Martha Brae, and explore local craft markets.</li>
+                <img src="dunsriver.jpg" alt="Dunn’s River Falls" />
+                <img src="dunsriver2.jpg" alt="Rafting on the Martha Brae" />
+                <li><strong>Day 3:</strong> Experience water horseback riding and indulge in wood-fired jerk chicken in the countryside.</li>
+                <img src="arubahorse.jpg" alt="Water Horseback Riding" />
+                <img src="jamaicajerk.jpg" alt="Woodside Jerk Chicken" />
+                <li><strong>Day 4:</strong> Tour the Bob Marley Museum, treat yourself to Devon House desserts, and dine on seafood at Port Royal.</li>
+                <img src="marleyhouse.jpg" alt="Bob Marley Museum" />
+                <img src="marleyhouse2.jpg" alt="Devon House" />
+                <li><strong>Day 5:</strong> Snorkel at Montego Bay Marine Park and unwind at Doctor's Cave Beach.</li>
+                <img src="onelove.jpg" alt="Montego Bay Marine Park" />
+            </ul>
         </section>
 
         <section>
@@ -100,22 +58,5 @@
     <footer>
         <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
     </footer>
-    <script>
- document.querySelectorAll(".collapsible").forEach(button => {
-    button.addEventListener("click", () => {
-        // Toggle active class for styling
-        button.classList.toggle("active");
-
-        // Show or hide the content
-        const content = button.nextElementSibling;
-        if (content.style.display === "block") {
-            content.style.display = "none";
-        } else {
-            content.style.display = "block";
-        }
-    });
-});
-    </script>
 </body>
-
 </html>
