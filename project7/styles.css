@@ -304,7 +304,7 @@ a.button:active {
   
   .skip-to-content {
     position: absolute;
-    top: -40px; /* Initially hide the button off-screen */
+    top: 40px; /* Initially hide the button off-screen */
     left: 0;
     background-color: #6c63ff;
     color: white;
