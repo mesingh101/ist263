@@ -86,7 +86,7 @@ section p {
 
 /* Image Styling */
 img {
-    max-width: 100%;
+    max-width: 210px;
     height: auto;
     object-fit: cover; /* Ensures the image fits nicely */
     border: 2px solid #e0e0e0;
@@ -227,35 +227,4 @@ a.button:active {
 
 .close:hover {
     color: black;
-}
-
-/* Collapsible Section */
-.collapsible {
-    background-color: #f1f1f1;
-    color: #444;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 1.1em;
-    font-weight: bold;
-}
-
-.collapsible:hover {
-    background-color: #ddd;
-}
-
-.collapsible.active {
-    background-color: #ccc;
-}
-
-.content {
-    padding: 0 15px;
-    display: none;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    border-left: 2px solid #ddd;
-    border-right: 2px solid #ddd;
-    border-bottom: 2px solid #ddd;
 }
