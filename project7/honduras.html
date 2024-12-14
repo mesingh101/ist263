@@ -6,17 +6,6 @@
     <meta name="description" content="Experience the natural beauty and culture of Honduras">
     <title>Honduras: Adventure Awaits</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        function toggleItinerary() {
-            const itinerary = document.getElementById('itinerary');
-            itinerary.style.display = itinerary.style.display === 'none' ? 'block' : 'none';
-        }
-
-        function submitContactForm(event) {
-            event.preventDefault(); // Prevent form submission
-            alert('Thank you for reaching out! We will get back to you soon.');
-        }
-    </script>
 </head>
 <body>
     <header>
@@ -35,37 +24,35 @@
     <main>
         <section>
             <h2>4-Day Itinerary</h2>
-            <button onclick="toggleItinerary()">Toggle Itinerary Visibility</button>
-            <div id="itinerary">
-                <img src="roatan.jpg" alt="Honduras Scenic View" />
-                <p>Honduras is a gem of Central America, boasting lush landscapes, vibrant culture, and pristine beaches. Here's a 4-day itinerary to experience the best of Honduras:</p>
-                <ul>
-                    <li>
-                        <strong>Day 1:</strong> Explore Tegucigalpa’s historic center, hike at La Tigra National Park, enjoy local Honduran cuisine at a traditional restaurant.
-                        <img src="tegucigalpa.jpg" alt="La Tigra National Park" />
-                        <img src="tigrapark.jpg" alt="La Tigra National Park" />
-                        <img src="hondurandish.jpg" alt="Honduran Cuisine" />
-                    </li>
-                    <li>
-                        <strong>Day 2:</strong> Visit the Copán Ruins, a UNESCO World Heritage Site, and learn about ancient Mayan civilization. Stay in the charming town of Copán Ruinas.
-                        <img src="honduranruins.jpg" alt="Copán Ruins" />
-                        <img src="ruins2.jpg" alt="Copán Ruins" />
-                        <img src="ruins3.jpg" alt="Copán Ruins" />
-                    </li>
-                    <li>
-                        <strong>Day 3:</strong> Head to Roatán Island, snorkel in the Mesoamerican Barrier Reef, and relax on West Bay Beach.
-                        <img src="honanimal.jpeg" alt="Roatán Beach" />
-                        <img src="beachhon.jpg" alt="West Bay Beach" />
-                        <img src="snorkeling.jpg" alt="Snorkeling" />
-                    </li>
-                    <li>
-                        <strong>Day 4:</strong> Kayak through mangroves in Utila, swim with whale sharks (seasonal), and savor a seafood feast by the ocean.
-                        <img src="kayaking.jpg" alt="Utila Mangroves" />
-                        <img src="dolphin.jpg" alt="Swimming with dolphins" />
-                        <img src="beachfood.jpg" alt="Seafood Feast" />
-                    </li>
-                </ul>
-            </div>
+            <img src="roatan.jpg" alt="Honduras Scenic View" />
+            <p>Honduras is a gem of Central America, boasting lush landscapes, vibrant culture, and pristine beaches. Here's a 4-day itinerary to experience the best of Honduras:</p>
+            <ul>
+                <li>
+                    <strong>Day 1:</strong> Explore Tegucigalpa’s historic center, hike at La Tigra National Park, enjoy local Honduran cuisine at a traditional restaurant.
+                    <img src="tegucigalpa.jpg" alt="La Tigra National Park" />
+                    <img src="tigrapark.jpg" alt="La Tigra National Park" />
+                    <img src="hondurandish.jpg" alt="Honduran Cuisine" />
+                </li>
+                <li>
+                    <strong>Day 2:</strong> Visit the Copán Ruins, a UNESCO World Heritage Site, and learn about ancient Mayan civilization. Stay in the charming town of Copán Ruinas.
+                    <img src="honduranruins.jpg" alt="Copán Ruins" />
+                    <img src="ruins2.jpg" alt="Copán Ruins" />
+                    <img src="ruins3.jpg" alt="Copán Ruins" />
+                </li>
+                <li>
+                    <strong>Day 3:</strong> Head to Roatán Island, snorkel in the Mesoamerican Barrier Reef, and relax on West Bay Beach.
+                    <img src="honanimal.jpeg" alt="Roatán Beach" />
+                    <img src="beachhon.jpg" alt="West Bay Beach" />
+                    <img src="snorkeling.jpg" alt="Snorkeling" />
+                </li>
+                <li>
+                    <strong>Day 4:</strong> Kayak through mangroves in Utila, swim with whale sharks (seasonal), and savor a seafood feast by the ocean.
+                    <img src="kayaking.jpg" alt="Utila Mangroves" />
+                    <img src="dolphin.jpg" alt="Swimming with dolphins" />
+                    <img src="beachfood.jpg" alt="Seafood Feast" />
+                </li>
+            </ul>
+            
         </section>
 
         <section>
@@ -78,22 +65,6 @@
                 <li><strong>Safety Tip:</strong> Stick to well-traveled areas and follow local advice for a safe trip.</li>
             </ul>
         </section>
-
-        <section>
-            <h2>Contact Us</h2>
-            <form id="contactForm" onsubmit="submitContactForm(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
     </main>
 
     <footer>
@@ -101,4 +72,3 @@
     </footer>
 </body>
 </html>
-

@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', Arial, sans-serif; /* Add a modern and clean font */
+    font-family: 'Poppins', Arial, sans-serif; /* Modern and clean font */
     line-height: 1.8;
     margin: 0;
     padding: 0;
@@ -86,13 +86,13 @@ section p {
 
 /* Image Styling */
 img {
-    width: 150px; /* Small square size */
-    height: 150px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover; /* Ensures the image fits nicely */
     border: 2px solid #e0e0e0;
     border-radius: 10px; /* Rounded corners for a softer look */
     margin: 15px auto;
-    display: block; /* Centers the image */
+    display: block; /* Ensures all images are centered */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for a polished appearance */
 }
 
@@ -121,6 +121,10 @@ a.button {
 a.button:hover {
     background-color: #4e54c8;
     transform: scale(1.05);
+}
+
+a.button:active {
+    transform: scale(0.98); /* Slight press-down effect */
 }
 
 /* Responsive Design */
@@ -169,24 +173,13 @@ a.button:hover {
 }
 
 .intro .images img {
-    width: 100%; /* Images span the width of their container */
+    max-width: 100%; /* Images span the width of their container */
     max-width: 400px; /* Limit maximum size for consistency */
     border-radius: 15px; /* Keep rounded corners */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Deeper shadow for emphasis */
     margin-bottom: 20px; /* Space between images */
 }
 
-/* Responsive Adjustments for Intro Section */
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column; /* Stack text and images on smaller screens */
-        text-align: center; /* Center align for smaller devices */
-    }
-
-    .intro .images img {
-        max-width: 80%; /* Adjust image size for small screens */
-    }
-}
 /* Modal Styles */
 .modal {
     display: none; /* Hidden by default */
@@ -236,9 +229,7 @@ a.button:hover {
     color: black;
 }
 
-a.button:active {
-    transform: scale(0.98); /* Slight press-down effect */
-}
+/* Collapsible Section */
 .collapsible {
     background-color: #f1f1f1;
     color: #444;
