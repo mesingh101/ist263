@@ -101,19 +101,21 @@
         <p>&copy; 2024 My Travel Blog. All rights reserved.</p>
     </footer>
     <script>
-        document.querySelectorAll(".collapsible").forEach(button => {
-            button.addEventListener("click", () => {
-                button.classList.toggle("active");
-                const content = button.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } else {
-                    content.style.display = "block";
-                }
-            });
-        });
+ document.querySelectorAll(".collapsible").forEach(button => {
+    button.addEventListener("click", () => {
+        // Toggle active class for styling
+        button.classList.toggle("active");
+
+        // Show or hide the content
+        const content = button.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+});
     </script>
 </body>
-
 
 </html>
