@@ -232,8 +232,8 @@ a.button:active {
 /* Navbar container */
 .navbar {
     overflow: hidden;
-    background-color: #333;
-    font-family: Arial, sans-serif;
+    background-color: #ff99cc;
+    font-family: 'Poppins', Arial, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
