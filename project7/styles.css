@@ -397,3 +397,12 @@ a img:hover {
     border-color: #4CAF50;   /* Green border color */
     cursor: pointer;        /* Change cursor to indicate it's clickable */
 }
+
+button, a.button {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+* {
+    box-sizing: border-box;
+}
